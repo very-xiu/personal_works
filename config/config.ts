@@ -45,6 +45,8 @@ export default defineConfig({
   title: false,
   ignoreMomentLocale: true,
   manifest: {
-    basePath: '/personal_works/',
+    // basePath: '/',
   },
+  // outputPath: 'build',
+  publicPath: 'https://very-xiu.github.io/personal_works/',
 });
