@@ -7,10 +7,10 @@ import listData from '@/assets/js/listData';
 import { useState } from 'react';
 
 export default function IndexPage() {
-  console.log(history, listData);
+  // console.log(history, listData);
   const tag = history.location.pathname.split('/')[1];
   const [data] = useState<any>(listData[tag]);
-  console.log('data: ', data);
+  // console.log('data: ', data);
 
   return (
     <PageContainer title={false}>

@@ -50,6 +50,15 @@ export default defineConfig({
     // basePath: '/',
   },
   outputPath: 'docs',
-  publicPath: REACT_APP_ENV=='dev'?'/':'https://very-xiu.github.io/personal_works/',
-  links: [{ rel: 'icon', href: '/favicon.ico' }]
+  publicPath:
+    REACT_APP_ENV == 'dev' ? '/' : 'https://very-xiu.github.io/personal_works/',
+  links: [
+    {
+      rel: 'icon',
+      href:
+        REACT_APP_ENV == 'dev'
+          ? '/favicon.ico'
+          : 'https://very-xiu.github.io/personal_works/favicon.ico',
+    },
+  ],
 });
