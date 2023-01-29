@@ -45,6 +45,6 @@ export default defineConfig({
   title: false,
   ignoreMomentLocale: true,
   manifest: {
-    basePath: '/',
+    basePath: '/personal_works/',
   },
 });
