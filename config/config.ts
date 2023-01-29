@@ -2,6 +2,8 @@
 import { defineConfig } from 'umi';
 import defaultSettings from './defaultSettings';
 
+const { REACT_APP_ENV } = process.env;
+
 export default defineConfig({
   mfsu: {},
   hash: true,
@@ -47,6 +49,7 @@ export default defineConfig({
   manifest: {
     // basePath: '/',
   },
-  // outputPath: 'build',
-  publicPath: 'https://very-xiu.github.io/personal_works/',
+  outputPath: 'docs',
+  publicPath: REACT_APP_ENV=='dev'?'/':'https://very-xiu.github.io/personal_works/',
+  links: [{ rel: 'icon', href: '/favicon.ico' }]
 });

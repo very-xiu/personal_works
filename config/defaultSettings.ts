@@ -25,6 +25,10 @@ const proSettings: DefaultSettings = {
   splitMenus: false,
   routes1: [
     {
+      path: '/personal_works',
+      redirect: '/vue',
+    },
+    {
       path: '/',
       redirect: '/vue',
     },
