@@ -1,7 +1,5 @@
-import fygl from '../images/fygl.png';
-
 const data:any={
-  vue:[
+  personal_works:[
     {
       title:"楼盘管理楼盘管理楼盘管理楼盘管理楼盘管理",
       username:"admin",

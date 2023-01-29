@@ -25,15 +25,11 @@ const proSettings: DefaultSettings = {
   splitMenus: false,
   routes1: [
     {
-      path: '/personal_works',
-      redirect: '/vue',
-    },
-    {
       path: '/',
-      redirect: '/vue',
+      redirect: '/personal_works',
     },
     {
-      path: '/vue',
+      path: '/personal_works',
       name: 'vue作品预览',
       component: '@/pages/index',
       icon: React.createElement(ICON["HeatMapOutlined"]),
