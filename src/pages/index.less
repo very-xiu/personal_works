@@ -2,28 +2,38 @@
   background: rgb(121, 242, 157);
 }
 
-.index_class {
-  width: 250px;
-  background-color: #fff;
-  padding: 15px;
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  box-shadow: 1px 3px 7px 1px rgba(0, 0, 0, 0.2);
-  > span {
-    width: 100%;
-    margin-top: 4px;
-    padding-left: 6px;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
+.index_pageCon{
+  :global{
+    .ant-pro-page-container-children-content{
+      display: flex;
+      flex-wrap: wrap;
+    }
   }
-  :global {
-    .ant-image {
-      margin-bottom: 10px;
-      box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.2);
+  .index_class {
+    margin-right: 15px;
+    margin-bottom: 15px;
+    width: 250px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 1px 3px 7px 1px rgba(0, 0, 0, 0.2);
+    > span {
+      width: 100%;
+      margin-top: 4px;
+      padding-left: 6px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+    :global {
+      .ant-image {
+        margin-bottom: 10px;
+        box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.2);
+      }
     }
   }
 }
