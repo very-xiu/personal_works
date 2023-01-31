@@ -19,7 +19,7 @@ const proSettings: DefaultSettings = {
   menu: {
     locale: true,
   },
-  title: '个人作品展示',
+  title: '个人作品展示(免费静态资源网站-网络请求加载速度较慢，请谅解)',
   pwa: false,
   iconfontUrl: '',
   splitMenus: false,
@@ -45,6 +45,12 @@ const proSettings: DefaultSettings = {
       name: '小程序作品预览',
       component: '@/pages/index',
       icon: React.createElement(ICON["WechatOutlined"]),
+    },
+    {
+      path: '/noFramePractice',
+      name: '非框架练习项目',
+      component: '@/pages/index',
+      icon: React.createElement(ICON["CodepenOutlined"]),
     },
   ],
 };

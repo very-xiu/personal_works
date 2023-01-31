@@ -8,8 +8,8 @@ import { useState } from 'react';
 
 export default function IndexPage() {
   // console.log(history);
-  const {pathname}=history.location;
-  const num=1;
+  const { pathname } = history.location;
+  const num = 1;
   const tag = pathname.split('/')[num];
   const [data] = useState<any>(listData[tag]);
   // console.log('data: ', data);
@@ -19,9 +19,24 @@ export default function IndexPage() {
       {data.map((item: any, i: number) => {
         return (
           <div key={i} className={styles.index_class}>
-            <ImageViewer src={item.imgSrc} />
+            <div
+              style={{
+                width: 250,
+                height: 200,
+                display: 'flex',
+                justifyContent: 'center',
+                padding:"0 15px",
+                marginBottom: 10
+              }}
+            >
+              <ImageViewer height={'100%'} src={item.imgSrc} />
+            </div>
             <Tooltip title={item.title}>
-              <span>标&emsp;&emsp;题：{item.title}</span>
+              {item.linkUrl ? (
+                <span>标&emsp;&emsp;题：{item.title}</span>
+              ) : (
+                <span>标题：{item.title}</span>
+              )}
             </Tooltip>
             {item.linkUrl && (
               <>
